@@ -1,1 +1,1 @@
-# css-notes
+# Personal notes about CSS from MDN
