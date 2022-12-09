@@ -250,4 +250,66 @@ A common use of `max-width` is to cause images to scale down if there is not eno
 1vmin = 1vw or 1vh, whichever is smaller
 1vmax = 1vw or 1vh, whichever is larger
 
+`object-fit: cover;` to protect aspect ratio.
+
+---
+
+**Form Styling**
+
+To force the image to stretch to fill the grid cell it is in, you'd have to do something like the following:
+
+```css
+img {
+  width: 100%;
+  height: 100%;
+}
+```
+
+[Style and Working with Form Element](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+
+[Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
+
+[Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
+
+In some browsers, form elements do not inherit font styling by default. Therefore, if you want to be sure that your form fields use the font defined on the body, or on a parent element, you should add this rule to your CSS.
+
+```css
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+```
+
+In addition to the rules mentioned above, you should also set `overflow: auto` on `<textarea>` s to stop IE showing a scrollbar when there is no need for one:
+
+```css
+textarea {
+  overflow: auto;
+}
+```
+
+[very popular stylesheet used as a base by many projects](https://necolas.github.io/normalize.css/)
+
+---
+
+## Styling Tables
+
+[A very good referance to style tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
+
+---
+
+A good first step, therefore, is to run your HTML and CSS through a validator, to pick up and fix any errors.
+
+---
+
+[Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+---
+
 
