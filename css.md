@@ -833,3 +833,74 @@ grid-template-columns:
 ---
 
 ### Masonry
+```css
+  grid-template-rows: masonry;
+```
+
+### Subgrid
+
+Subgrid is an extremely useful feature of grids that allows grid items to have a grid of their own that inherits grid lines from the parent grid.
+
+```css
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-item {
+  grid-column: 2 / 7;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.child-of-grid-item {
+  /* gets to participate on parent grid! */
+  grid-column: 3 / 6;
+}
+```
+
+## CSS Grid animation
+
+According to the CSS Grid Layout Module Level 1 specification, there are 5 animatable grid properties:
+
+grid-gap, grid-row-gap, grid-column-gap as length, percentage, or calc.
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px;
+  grid-gap: 20px;
+  transition: all 1s;
+}
+```
+
+**[Css-Grid tricks](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-css-grid-tricks)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
